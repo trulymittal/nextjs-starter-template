@@ -73,4 +73,136 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  h1 {
+    @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
+  }
+
+  h2 {
+    @apply scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0;
+  }
+
+  h3 {
+    @apply scroll-m-20 text-2xl font-semibold tracking-tight;
+  }
+  h4 {
+    @apply scroll-m-20 text-xl font-semibold tracking-tight;
+  }
+
+  p {
+    @apply leading-7 [&:not(:first-child)]:mt-6;
+  }
+
+  blockquote {
+    @apply mt-6 border-l-2 pl-6 italic;
+  }
+
+  ul,
+  ol {
+    @apply my-6 ml-6 list-disc [&>li]:mt-2;
+  }
+
+  code {
+    @apply relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold;
+  }
+
+  .lead {
+    @apply text-xl text-muted-foreground;
+  }
+  .large {
+    @apply text-lg font-semibold;
+  }
+  .small {
+    @apply text-sm font-medium leading-none;
+  }
+  .muted {
+    @apply text-sm text-muted-foreground;
+  }
+}
+
+.cl-formButtonPrimary {
+  @apply inline-flex h-9 items-center justify-center whitespace-nowrap rounded-md bg-primary px-3 text-xs font-medium text-primary-foreground ring-offset-background transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+}
+
+.cl-card,
+.cl-socialButtonsBlockButton,
+.cl-alert,
+.cl-identityPreview,
+.cl-phoneInputBox {
+  @apply border border-input bg-background;
+}
+
+.cl-headerTitle,
+.cl-socialButtonsBlockButtonText,
+.cl-loading,
+.cl-formFieldLabel,
+.cl-formHeaderTitle,
+.cl-selectButton__countryCode,
+.cl-selectButton__countryCode p,
+.cl-selectOption p,
+.cl-selectOption div {
+  @apply dark:text-foreground;
+}
+
+.cl-headerSubtitle,
+.cl-dividerText,
+.cl-footerActionText,
+.cl-alertText,
+.cl-formFieldInfoText,
+.cl-formFieldSuccessText,
+.cl-identityPreviewText,
+.cl-formHeaderSubtitle {
+  @apply text-muted-foreground;
+}
+
+.cl-dividerLine {
+  @apply bg-border;
+}
+
+.cl-formFieldInput {
+  @apply flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-foreground ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.cl-footerActionLink {
+  @apply text-accent-foreground underline hover:text-accent-foreground/90;
+}
+
+.cl-otpCodeFieldInput {
+  @apply border border-b-input text-foreground;
+}
+
+.cl-formResendCodeLink {
+  @apply text-primary disabled:opacity-90;
+}
+
+.cl-selectSearchInput__countryCode {
+  @apply flex h-10 w-full rounded-md border border-b border-input bg-background text-foreground ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.cl-selectOptionsContainer__countryCode {
+  @apply border border-input bg-background;
+}
+
+.cl-internal-icon {
+  @apply text-foreground;
+}
+
+/* UserButton Card */
+.cl-userPreviewMainIdentifier {
+  @apply text-foreground;
+}
+.cl-userPreviewSecondaryIdentifier {
+  @apply text-muted-foreground;
+}
+
+.cl-userButtonPopoverActionButton {
+  /* @apply px-2 py-1; */
+  /* @apply mx-3 px-3 flex h-10 rounded-md border border-input bg-background py-2 text-foreground; */
+  @apply mx-3 flex h-10 rounded-md border border-input bg-background px-3 py-2 text-foreground ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+}
+.cl-userButtonPopoverActionButtonIconBox {
+  @apply mix-blend-luminosity;
+}
+.cl-userButtonPopoverActionButtonText {
+  @apply text-muted-foreground;
 }
